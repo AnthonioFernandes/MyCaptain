@@ -1,0 +1,5 @@
+#To Print Extension Of File
+
+file_name= input("Enter file name:")
+file_extension= file_name.split(".")
+print("The file extension is:" + repr(file_extension[-1]))
