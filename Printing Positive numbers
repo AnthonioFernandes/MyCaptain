@@ -1,0 +1,24 @@
+##Printing positive numbers
+# NOTE: Using for loop
+#list1
+print("First problem:- List1")
+mylist1=[]
+list1=[12,-7,5,64,-14]
+print("Input: List1 = ", str(list1))
+for num in list1:
+    if num >=0:
+        mylist1.append(num)
+print("Output:", str(mylist1))
+
+# NOTE: Using While loop
+#list2
+print("Second problem:- List2")
+mylist2=[]
+list2=[12,14,-95,3]
+print("Input: List2 = ", str(list2))
+i=0
+while i < len(list2):
+    if list2[i]>=0:
+        mylist2.append(list2[i])
+    i=i+1
+print("Output: ",str(mylist2))
