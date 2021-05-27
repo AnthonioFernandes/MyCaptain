@@ -1,0 +1,16 @@
+# NOTE: To print letters in decreasing order of freq.
+
+import operator
+
+def most_frequent():
+    str=input("Enter a string:\n")
+    output= {}
+    for x in str:
+        output[x]=str.count(x)
+    Descending=sorted(output.items(),key=operator.itemgetter(1),reverse=True)
+    print("\nThe frequency of the given string in descending order:\n")
+    for x in Descending:
+        print(f"{x[0]}={x[1]}")
+
+
+most_frequent()
